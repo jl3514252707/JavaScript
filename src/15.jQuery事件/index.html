@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../../lib/jquery-3.6.0.js"></script>
+
+    <style>
+        div{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        div p{
+            text-align: center;
+            line-height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1></h1>
+
+<div>
+    <p>在这里移动鼠标试试</p>
+</div>
+
+
+
+<script>
+    <!--$()当网页元素加载完毕后，响应事件-->
+    $(function(){
+        $('div').mousemove(function (m){
+            $('h1').text('鼠标坐标 x:'+m.pageX+' y:'+m.pageY);
+        })
+    })
+
+</script>
+
+</body>
+</html>

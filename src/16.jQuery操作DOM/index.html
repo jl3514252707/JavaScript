@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--导入jQuery包-->
+    <script src="../../lib/jquery-3.6.0.js"></script>
+
+</head>
+<body>
+
+<ul>
+    <li id="c">C</li>
+    <li id="cpp">C++</li>
+    <li id="java">JAVA</li>
+    <li id="python">Python</li>
+    <li>Html</li>
+</ul>
+
+<script>
+    //节点文本操作(text()和html()无参数为获得值，有参数为赋值）
+    console.log( $('ul li[id=c]').text()  +  $('ul li[id=cpp]').html() );
+
+    //CSS操作(括号内为一个键值对)
+    $('ul li[id=java]').css('color','red');
+
+    //元素的隐藏
+    $('ul li[id=python]').hide();
+
+</script>
+
+</body>
+</html>
